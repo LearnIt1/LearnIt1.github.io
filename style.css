@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif, serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('media/private-lesson2\ kid.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    font-size: 5.5em;
+    padding: 3.5% 4%;
+}
+
+#learnit {
+    color: blueviolet;
+}
+
+.content {
+    margin-top: 5vh;
+    position: fixed;
+    line-height: 2em;
+}
+
+t {
+    color: #3e4ab8;
+    font-weight: bold;
+}
+
+.a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 10vh;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    width: 30vw;
+    opacity: 0;
+    pointer-events: none;
+}
+
+a {
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 24px;
+    padding: 5% 10%;
+    text-decoration: none;
+    text-align: center;
+    transition: 300ms;
+}
+
+a:hover {
+    background-color: #3e4ab8;
+}
+
+.show {
+    visibility: visible;
+}
+
+@media only screen and (min-width: 345px) and (orientation: portrait) {
+    body {
+        font-size: 2.5em;
+        padding: 3.5% 4%;
+        
+    }
+    .a {
+        width: 200px;
+        left: 50%;
+        top: 75%;
+    }
+}
+
+@media only screen and (min-width: 650px) {
+    body {
+        font-size: 3em;
+        padding: 3.5% 4%;
+        
+    }
+    .a {
+        width: 320px;
+        left: 50%;
+        top: 75%;
+    }
+}
+
+@media only screen and (min-width: 845px) {
+    body {
+        font-size: 3.5em;
+        padding: 3.5% 4%;
+        
+    }
+    .a {
+        width: 380px;
+        left: 50%;
+        top: 75%;
+    }
+}
+
+@media only screen and (min-width: 1010px) {
+    body {
+        font-size: 4em;
+        padding: 3.5% 4%;
+        
+    }
+    .a {
+        width: 380px;
+        left: 50%;
+        top: 77%;
+    }
+}
+
+@media only screen and (min-width: 1350px) {
+    body {
+        font-size: 4.5em;
+        padding: 3.5% 4%;
+        
+    }
+    .a {
+        width: 380px;
+        left: 50%;
+        top: 77%;
+    }
+}
+
+@media only screen and (min-width: 1450px) {
+    body {
+        font-size: 5.5em;
+        padding: 3.5% 4%;
+        
+    }
+    .a {
+        width: 550px;
+        left: 50%;
+        top: 72%;
+    }
+}
+
+

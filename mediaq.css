@@ -1,0 +1,288 @@
+/* media queries */
+
+@media only screen and (min-width: 345px) and (orientation: portrait) {
+    footer {
+        height: 20vh;
+    }
+    .footer-links {
+        font-size: 0.8em;
+        margin-bottom: 5%;
+    }
+}
+
+
+/* just for the nav links */
+@media only screen and (min-width: 440px) and (orientation: portrait) {
+    .nav-link {
+        font-size: 0.9em;
+    }
+    footer {
+        height: 23vh;
+    }
+}
+
+@media only screen and (min-width: 650px)  {
+    /* HEADER */
+    header {
+        height: 15vh;
+    }
+    #main-logo {
+        height: 10vh;
+    }
+    .head-container h1 {
+        font-size: 2.3em;
+        margin-bottom: 2%;
+    } 
+    .nav-link {
+        font-size: 1em;
+    }
+    /* MAIN CONTENT */
+    main {
+        top: 13vh;
+    }
+    
+    .p-header {
+        font-size: 3em;
+        margin-bottom: 3%;
+        margin-top: 3%;
+    }
+    
+    .section {
+        margin-bottom: 6%;
+    }
+    
+    .para {
+        margin-top: 1%;
+        margin-bottom: 5%;
+        font-size: 1.5em;
+    }
+    
+    .quote-content {
+        margin: 3vh auto 5vh;
+        padding: 3%;
+    }
+    
+    .quote {
+        font-size: 4em;
+        padding: 3%;
+    }
+    
+    .quote-text {
+        font-size: 3em;
+    }
+    /* JOIN US */
+    .phone-nums {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        align-content: space-around;
+    }
+    .phone-nums,  .phone-nums a {
+        font-size: 1.5em;
+    }
+
+    /* FOOTER */
+    footer {
+        height: 32vh;
+    }
+    .footer-links {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .footer-links a {
+        text-decoration: none;
+        color: white;
+        font-size: 2.5em;
+    }
+    #refund-button {
+        font-size: 2.5em;
+    }
+    .modal-header .close-button {
+        font-size: 2.5em;
+    }
+    .footer-bottom {
+        margin-top: 3%;
+        padding: 4%;
+    }
+}
+
+
+@media only screen and (min-width: 845px) {
+    #main-logo {
+        height: 12vh;
+    }
+    .head-container h1 {
+        font-size: 3em;
+        margin-bottom: 2%;
+    } 
+    .nav-link {
+        font-size: 1.3em;
+    }
+
+    footer {
+        height: 35vh;
+    }
+    .footer-links {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .footer-links a {
+        text-decoration: none;
+        color: white;
+        font-size: 3.5em;
+    }
+    #refund-button {
+        font-size: 3.5em;
+    }
+    .modal-header .close-button {
+        font-size: 3.5em;
+    }
+    .footer-bottom {
+        margin-top: 3%;
+        padding: 4%;
+        font-size: 1.5em;
+    }
+    .p-header {
+        font-size: 3.5em;
+        margin-bottom: 3.3%;
+        margin-top: 5.3%;
+    }
+    
+    .section {
+        margin-bottom: 8%;
+    }
+    
+    .para {
+        margin-top: 1%;
+        margin-bottom: 5%;
+        font-size: 1.8em;
+    }
+    
+    .quote-content {
+        margin: 6vh auto 5vh;
+        padding: 2%;
+        border-top: 2px solid #3e4ab8;
+        border-bottom: 2px solid #3e4ab8;
+    }
+    
+    .quote {
+        font-size: 5em;
+        padding: 3%;
+        
+    }
+    
+    .quote-text {
+        font-size: 4em;
+    }
+    .phone-nums,  .phone-nums a {
+        font-size: 1.7em;
+    }
+    .accordion-link {
+        font-size: 2.2rem;
+    }
+    .answer p, a {
+        font-size: 1.7rem;
+    }
+    .with-borders {
+        margin: 0 2%;
+    }
+    .quote {
+        font-size: 3.3em;
+        font-family: 'Passion One', sans-serif;
+        padding: 3%;
+        color: #3e4ab8;
+    }
+    
+    .quote-text {
+        font-family: 'Assistant', sans-serif;
+        font-size: 2.3em;
+    }
+    
+}
+
+
+@media only screen and (min-width: 1010px) {
+    header {
+        height: 14.4vh;
+    }
+    #main-logo {
+        height: 10.4vh;
+    }
+    .head-container h1 {
+        font-size: 3.2em;
+        margin-bottom: 2%;
+    } 
+    .nav-link {
+        font-size: 1.5em;
+    }
+
+    footer {
+        height: 41vh;
+    }
+    .accordion-link {
+        font-size: 3rem;
+    }
+    .answer p, a {
+        font-size: 2rem;
+    }
+    .quote-content {
+        margin: 6vh auto 5vh;
+        padding: 3%;
+        border-top: 2px solid #3e4ab8;
+        border-bottom: 2px solid #3e4ab8;
+    }
+    .with-borders {
+        margin: 0 2%;
+    }
+    .quote {
+        font-size: 4em;
+        font-family: 'Passion One', sans-serif;
+        padding: 2%;
+        color: #3e4ab8;
+    }
+    
+    .quote-text {
+        font-family: 'Assistant', sans-serif;
+        font-size: 2.3em;
+    }
+    
+    
+}
+
+
+@media only screen and (min-width: 1350px) {
+    footer {
+        height: 48vh;
+    }
+    .accordion-link {
+        font-size: 4rem;
+    }
+    .answer p, a {
+        font-size: 2.4rem;
+    }
+    .quote-content {
+        margin: 6vh auto 5vh;
+        padding: 4%;
+        border-top: 2px solid #3e4ab8;
+        border-bottom: 2px solid #3e4ab8;
+    }
+    .with-borders {
+        margin: 0 2%;
+    }
+    .quote {
+        font-size: 7em;
+        font-family: 'Passion One', sans-serif;
+        padding: 3%;
+        color: #3e4ab8;
+    }
+    
+    .quote-text {
+        font-family: 'Assistant', sans-serif;
+        font-size: 4em;
+    }
+    
+    
+}
