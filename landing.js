@@ -1,11 +1,4 @@
-
 const tellMeMore = document.querySelector(".a")
-
-// setTimeout(function(){
-//     tellMeMore.classList.add("show")
-// }, 3200 );
-
-
 setTimeout(function(){
     tellMeMore.style.opacity = 0.1;
 }, 7300 );
@@ -38,6 +31,33 @@ setTimeout(function(){
     tellMeMore.style.opacity = 1;
     tellMeMore.style.pointerEvents = "all";
 }, 8900 );
+
+
+const pages = document.querySelectorAll(".page");
+const body = document.getElementById("body");
+
+
+// tellMeMore.addEventListener("click", () => {
+//     pages.forEach(page => {
+//         if (page.getAttribute("id") == "landing") {
+//             page.classList.remove("active");
+//         }
+//         else {
+//             page.classList.add("active");
+//         }
+//     });
+// });
+
+const loader = document.querySelector(".loader");
+const loaderWrapper = document.querySelector(".loader-wrapper");
+const loaderInner = document.querySelector(".loader-inner");
+
+window.addEventListener("load", () => {
+    // loader.classList.add("hide");
+    loaderWrapper.classList.add("hide");
+    // loaderInner.classList.add("hide");
+})
+
 
 
         

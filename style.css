@@ -6,6 +6,7 @@
     scroll-behavior: smooth;
 }
 
+
 body {
     background-image: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('media/private-lesson2\ kid.jpg');
     background-repeat: no-repeat;
@@ -34,20 +35,13 @@ t {
 }
 
 .a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    bottom: 10vh;
-    left: 50%;
-    top: 70%;
-    transform: translate(-50%, -50%);
     width: 30vw;
     opacity: 0;
     pointer-events: none;
+    margin: 5% auto;
 }
 
-a {
+#more-button {
     color: #fff;
     border: 3px solid #fff;
     border-radius: 24px;
@@ -57,13 +51,37 @@ a {
     transition: 300ms;
 }
 
-a:hover {
+#more-button:hover {
     background-color: #3e4ab8;
 }
 
-.show {
-    visibility: visible;
+
+.page {
+    display: none;
+    transition: 1s ease-in-out;
 }
+
+.page.active {
+    display: block;
+}
+
+#info p {
+    font-size: 0.5em;
+    color: white;
+    z-index: 999;
+}
+
+.rotate {
+    transform: scaleX(-1);
+}
+
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 100px) and (orientation: portrait) {
     body {

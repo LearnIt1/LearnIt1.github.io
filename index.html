@@ -7,23 +7,27 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="loading.css">
     <script src="landing.js" defer></script>
+    <script src="jquery/3.5.1/jquery.min.js>"></script>
 </head>
-<body dir="rtl">
+<body dir="rtl" id="body">
 
-    
-    <div class="content">
-        <div id="typed-strings1">
-            <p>ברוכים הבאים ל-<t>LearnIt</t>.<br>
-            הפלטפורמה החדשה והייחודית לשיעורים פרטיים.</p>
-        </div>
-        <span id="typed1"></span>
-    </div>
+        <div class="content">
+            <div id="typed-strings1">
+                  <p>ברוכים הבאים ל-<t>LearnIt</t>.<br>
+                  הפלטפורמה החדשה והייחודית לשיעורים פרטיים.</p>
+            </div>
+            <span id="typed1"></span>
+            
+            <div class="a">
+                <a href="#" id="more-button">ספרו לי עוד</a>
+            </div>
+      </div>
 
-    <div class="a">
-        <a href="website.html">ספרו לי עוד</a>
-    </div>
-
+      <div class="loader-wrapper">
+          <span class="loader"><span class="loader-inner"></span></span>
+      </div>
 
       <script>
 
