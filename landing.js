@@ -3,14 +3,14 @@ const tellMeMore = document.querySelector(".a")
 function startShowing() {
     setTimeout(function(){
         tellMeMore.style.opacity = 0.1;
-    }, 7600 );
+    }, 7400 );
     
     setTimeout(function(){
         tellMeMore.style.opacity = 0.2;
-    }, 7900 );
+    }, 7600 );
     setTimeout(function(){
         tellMeMore.style.opacity = 0.3;
-    }, 8100 );
+    }, 8000 );
     setTimeout(function(){
         tellMeMore.style.opacity = 0.4;
     }, 8300 );
@@ -25,14 +25,14 @@ function startShowing() {
     }, 8900 );
     setTimeout(function(){
         tellMeMore.style.opacity = 0.8;
-    }, 9100 );
+    }, 9000 );
     setTimeout(function(){
         tellMeMore.style.opacity = 0.9;
-    }, 9300 );
+    }, 9100 );
     setTimeout(function(){
         tellMeMore.style.opacity = 1;
         tellMeMore.style.pointerEvents = "all";
-    }, 9500 );
+    }, 9100 );
 }
 
 
