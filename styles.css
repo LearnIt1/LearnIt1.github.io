@@ -264,16 +264,12 @@ footer {
     font-weight: 500;
 }
 
-.accordion-item:target .answer {
+.hide-answer {
+    max-height: 0;
+}
+
+.show-answer {
     max-height: 40rem;
-}
-
-.accordion-item:target .accordion-link .faq-icon.add {
-    display: none;
-}
-
-.accordion-item:target .accordion-link .faq-icon.remove {
-    display: block;
 }
 
 /* Back to Top Button */

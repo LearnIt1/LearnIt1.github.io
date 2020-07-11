@@ -109,6 +109,44 @@ const header = document.getElementById("header");
 const landingPage = document.getElementById("landing");
 
 
+//  faq stuff
+
+const addButtons = document.querySelectorAll(".faq-icon.add")
+const removeButtons = document.querySelectorAll(".faq-icon.remove");
+const faqAnswers = document.querySelectorAll(".answer")
+
+function showAnswer(event) {
+  let questionNumber = event.target.classList[2][1];   // "1"
+  let answerToShow = faqAnswers[questionNumber-1];
+  answerToShow.classList.add("show-answer");
+  event.target.style.display = "none";
+  let removeButtonToShow = removeButtons[questionNumber-1];
+  removeButtonToShow.style.display = "block";
+}
+
+function hideAnswer(event) {
+  let questionNumber = event.target.classList[2][1];
+  let answerToHide = faqAnswers[questionNumber-1];
+  answerToHide.classList.remove("show-answer")
+  event.target.style.display = "none";
+  let addButtonToShow = addButtons[questionNumber-1];
+  addButtonToShow.style.display = "block";
+  
+}
+
+addButtons.forEach(button => {
+    button.addEventListener("click", showAnswer);
+});
+
+removeButtons.forEach(button => {
+  button.addEventListener("click", hideAnswer);
+});
+// removeQ1.addEventListener("click", () => {
+//   answerQ1.classList.add('hide-answer');
+//   removeQ1.style.display = "none";
+//   addButtons[0].style.display = "block";
+// })
+
 
 
 
