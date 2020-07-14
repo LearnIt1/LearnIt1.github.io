@@ -111,9 +111,10 @@ const landingPage = document.getElementById("landing");
 
 //  faq stuff
 
-const addButtons = document.querySelectorAll(".faq-icon.add")
+const addButtons = document.querySelectorAll(".faq-icon.add");
 const removeButtons = document.querySelectorAll(".faq-icon.remove");
-const faqAnswers = document.querySelectorAll(".answer")
+const faqAnswers = document.querySelectorAll(".answer");
+const faqQuestions = document.querySelectorAll(".accordion-link");
 
 function showAnswer(event) {
   let questionNumber = event.target.classList[2][1];   // "1"
@@ -134,6 +135,19 @@ function hideAnswer(event) {
   
 }
 
+function onQuestionClick(event) {
+  let question = event.target.getAttribute("href");
+  let questionNumber = question[question.length-1];
+  let answerToShow = faqAnswers[questionNumber-1];
+  if (!answerToShow.classList.contains("show-answer")) {
+      answerToShow.classList.add("show-answer");
+      let addButtonToHide = addButtons[questionNumber-1];
+      addButtonToHide.style.display = "none";
+      let removeButtonToShow = removeButtons[questionNumber-1];
+      removeButtonToShow.style.display = "block";
+  }
+};
+
 addButtons.forEach(button => {
     button.addEventListener("click", showAnswer);
 });
@@ -141,11 +155,10 @@ addButtons.forEach(button => {
 removeButtons.forEach(button => {
   button.addEventListener("click", hideAnswer);
 });
-// removeQ1.addEventListener("click", () => {
-//   answerQ1.classList.add('hide-answer');
-//   removeQ1.style.display = "none";
-//   addButtons[0].style.display = "block";
-// })
+
+faqQuestions.forEach(q => {
+  q.addEventListener("click", onQuestionClick)
+});
 
 
 
