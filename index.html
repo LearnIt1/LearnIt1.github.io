@@ -30,13 +30,48 @@
       </div>
 
       <script>
-
+        function startShowing() {
+    setTimeout(function(){
+        tellMeMore.style.opacity = 0.1;
+    }, 1 );
+    
+    setTimeout(function(){
+        tellMeMore.style.opacity = 0.2;
+    }, 100 );
+    setTimeout(function(){
+        tellMeMore.style.opacity = 0.3;
+    }, 200 );
+    setTimeout(function(){
+        tellMeMore.style.opacity = 0.4;
+    }, 300 );
+    setTimeout(function(){
+        tellMeMore.style.opacity = 0.5;
+    }, 400 );
+    setTimeout(function(){
+        tellMeMore.style.opacity = 0.6;
+    }, 500 );
+    setTimeout(function(){
+        tellMeMore.style.opacity = 0.7;
+    }, 600 );
+    setTimeout(function(){
+        tellMeMore.style.opacity = 0.8;
+    }, 700 );
+    setTimeout(function(){
+        tellMeMore.style.opacity = 0.9;
+    }, 800 );
+    setTimeout(function(){
+        tellMeMore.style.opacity = 1;
+        tellMeMore.style.pointerEvents = "all";
+    }, 900 );
+}
         var typed = new Typed('#typed1', {
           stringsElement: '#typed-strings1',
           typeSpeed: 50,
           backSpeed: 50,
           startDelay: 1700,
           loop: false,
+
+          onComplete: function(self) {console.log('finished typing'); startShowing()}
         });
 
       </script>
